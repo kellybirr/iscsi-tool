@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <options>
+    <set-source-ports value="true" />
+    <quick-target-portals value="true" />
+  </options>
+  <networks>
+    <network prefix="10.250.1." />
+    <network prefix="10.250.2." />
+  </networks>
+  <servers>
+    <server fqdn="san01.my-storage.net" local-addr="10">
+      <targets>
+        <target iqn="iqn.2008-08.com.starwindsoftware:san01.my-storage.net-sql1-a" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san01.my-storage.net-sql2-a" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san01.my-storage.net-sql3-a" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san01.my-storage.net-sql4-a" />
+      </targets>
+    </server>
+    <server fqdn="san02.my-storage.net" local-addr="20">
+      <targets>
+        <target iqn="iqn.2008-08.com.starwindsoftware:san02.my-storage.net-sql1-b" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san02.my-storage.net-sql2-b" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san02.my-storage.net-sql3-b" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san02.my-storage.net-sql4-b" />
+      </targets>
+    </server>
+    <server fqdn="san03.my-storage.net" local-addr="30">
+      <targets>
+        <target iqn="iqn.2008-08.com.starwindsoftware:san03.my-storage.net-sql1-c" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san03.my-storage.net-sql2-c" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san03.my-storage.net-sql3-c" />
+        <target iqn="iqn.2008-08.com.starwindsoftware:san03.my-storage.net-sql4-c" />
+      </targets>
+    </server>
+  </servers>
+</config>
